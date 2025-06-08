@@ -142,7 +142,7 @@ public final class Color implements ConfigurationSerializable {
      *     bits
      */
     public static Color fromRGB(int rgb) throws IllegalArgumentException {
-        Validate.isTrue((rgb >> 24) == 0, "Extrenuous data in: ", rgb);
+        Validate.isTrue((rgb >> 24) == 0, "Extraneous data in: ", rgb);
         return fromRGB(rgb >> 16 & BIT_MASK, rgb >> 8 & BIT_MASK, rgb >> 0 & BIT_MASK);
     }
 
@@ -156,7 +156,7 @@ public final class Color implements ConfigurationSerializable {
      *     bits
      */
     public static Color fromBGR(int bgr) throws IllegalArgumentException {
-        Validate.isTrue((bgr >> 24) == 0, "Extrenuous data in: ", bgr);
+        Validate.isTrue((bgr >> 24) == 0, "Extraneous data in: ", bgr);
         return fromBGR(bgr >> 16 & BIT_MASK, bgr >> 8 & BIT_MASK, bgr >> 0 & BIT_MASK);
     }
 
